@@ -5,14 +5,14 @@ An extended version of a map that supports to store the snapshot of the map when
 Example:
 
 HistoricMap<String, String> map = new HistoricMapImpl<>();
-map.put(“a”, “a1”);
-map.snapshot(); // 0
-map.put(“b”, “b1”);
-map.snapshot(); // 1
-map.put(“b”, “b2.1”);
-map.put(“b”, “b2.1”);
-map.put(“c”, “c1”);
-map.snapshot(); // 2
-map.get(“b”, 1); // “b1”
-map.get(“b”, 2); // “b2.1”
-map.get(“a”, 2); // “a1”
+map.put(“a”, “a1”);  
+map.snapshot(); // 0  
+map.put(“b”, “b1”);  
+map.snapshot(); // 1  
+map.put(“b”, “b2.1”);  
+map.put(“b”, “b2.1”);  
+map.put(“c”, “c1”);  
+map.snapshot(); // 2  
+map.get(“b”, 1); // “b1”  
+map.get(“b”, 2); // “b2.1”  
+map.get(“a”, 2); // “a1”  
